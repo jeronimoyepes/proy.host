@@ -1,0 +1,121 @@
+.grey-background {
+	background: $textureBackground;
+	background-repeat: repeat;
+}
+
+.form-cont {
+	display: block;
+	max-width: 1150px;
+	margin: 4% auto 0;
+	padding: 0 10px;
+
+	a {
+		color: $grey;
+	}
+
+	.main {
+		display: inline-block;
+		width: 30%;
+		padding-right: 20px;
+
+		.logo-cont {
+			display: block;
+		}
+
+		.logo-cont img {
+			display: block;
+			margin: 0 0 0 auto;
+		}
+
+		h3 {
+			color: $grey;
+			font-size: 0.97em;
+			margin: 25px 0 10px;
+		}
+
+		input[type="email"],
+		input[type="text"],
+		input[type="password"] {
+			display: block;
+			@include border-radius();
+			padding: $inputTextPadding;
+			color: $darkGrey;
+			border: 1px solid $lightGrey;
+			width: 93%;
+			margin-bottom: 8px;
+		}
+
+		input[type="email"],
+		input[type="password"]:focus {
+			outline: none;
+		}
+
+		.submit-button-cont {
+			margin: 5px 0;
+			height: 31px;
+			div {
+				display: inline-block;
+				float: right;
+			}
+		}
+
+		input[type="image"] {
+			vertical-align: middle;
+			width: 31px;
+			height: 31px;
+		}
+
+		.submit-button {
+			background-color:transparent;
+			cursor: pointer;
+			margin: 0 0 0 auto;
+			font-weight: 600;
+			font-size: 1.05em;
+			color: $grey;
+			vertical-align: middle;
+			padding-left: 5px;
+		}
+
+		.rad-cont {
+			display: inline-block;
+			margin: 3px 20px 5px 0;
+		}
+
+		.social-cont img {
+			display: block;
+			margin: 0 0 0 auto;
+		}
+
+		.legal {
+			font-size: 0.95em;
+			color: $grey;
+			text-align: right;
+			margin-top: 5px;
+
+			a {
+				color: inherit;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.portrait {
+		display: inline-block;
+		vertical-align: top;
+		overflow: hidden;
+		width: 65%;
+
+		.img-cont {
+			@include border-radius();
+			width: auto;
+			height: 470px;
+		}
+
+		span {
+			display: block;
+			text-align: right;
+			color: $grey;
+			font-size: 0.95em;
+		}
+	}
+}

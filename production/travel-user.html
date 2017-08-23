@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es-ES" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Hostayni</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+	</script>
+
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Perfil de usuario -->
+		<header>
+			<div class="top-logo">
+				<img src="img/Logo-top.png" alt="">
+			</div>
+			<div class="breadcrumbs">
+				<p>Mi viaje a</p>
+				<p>Medellín</p>
+			</div>
+			<div class="profile-options">
+				<div class="img">
+					<!-- Imagen de perfil -->
+					<img src="img/profile.png" alt="">
+				</div>
+				<div class="name-options-cont">
+					<div class="name">
+						<p>Nombre del usuario</p>
+					</div>
+					<div class="options">
+						<img src="img/icons/gear.svg" alt="">
+						<div class="drop-down">
+							<ul>
+								<li><a href="#">Configuración</a></li>
+								<li class="line"></li>
+								<li><a href="#">Cerrar sesión</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Columna a la derecha -->
+		<div class="search-column">
+			<div class="utilities">
+				<!-- Botón para ir al mapa -->
+				<div class="map">
+					<a href="#" class="button">
+						<img src="img/icons/map-button.svg" alt="map">
+						<span>Mapa de viaje</span>
+					</a>
+				</div>
+				<!-- Botón para desplegar el calendario -->
+				<div class="diary">
+					<a href="#" class="button">
+						<img src="img/icons/diary-button.svg" alt="map">
+						<span>Agenda</span>
+					</a>
+					<div class="diary-drop-down">
+						<!-- Alerta de cita cercana -->
+						<a href="#">
+							<div class="appointment-alert">
+								<div class="header">
+									<img src="img/icons/exclamation.svg" alt="!">
+									<span class="date-hour">12/Abr 12:30</span>
+									<span class="name">Restaurante Hot and Fast</span>
+								</div>
+								<div class="body">
+									<div class="img" style="background: url(img/appoinment.jpg) no-repeat center; background-size:cover;"></div>
+								</div>
+							</div>
+							<div class="appointment-alert">
+								<div class="header">
+									<img src="img/icons/exclamation.svg" alt="!">
+									<span class="date-hour">12/Abr 12:30</span>
+									<span class="name">Restaurante Hot and Fast</span>
+								</div>
+								<div class="body">
+									<div class="img" style="background: url(img/appoinment.jpg) no-repeat center; background-size:cover;"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Columna a la derecha -->
+
+		<!-- Contenido principal (ofertas) -->
+		<main>
+			<!-- la clase full-width es para las ofertas que ocupan las dos columnas -->
+			<article class="innovate full-width">
+				<!-- Link al post -->
+				<a href="#">
+					<div class="img-title-cont">
+						<!-- la imagen de las publicaciones debe ser una imagen de background para poder modificar el contenedor independientemente del tamaño de la imagen -->
+						<div class="img" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
+						<div class="title-cont">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec erat sem, rutrum nec pulvinar cursus, imperdiet nec lectus. Integer sagittis ipsum sed urna malesuada, </h3>
+						</div>
+					</div>
+				</a>
+				<div class="post-info">
+					<!-- Este es el ícono que muestra el tipo de oferta, el color de la etiqueda depende de la clase que tenga el artículo, en este caso es innovate-->
+					<div class="post-type"><i>innovatehost</i></div>
+					<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec erat sem, rutrum nec pulvinar cursus, imperdiet nec lectus. Integer sagittis ipsum.</div>
+					<!-- Calificaciones -->
+					<div class="review">
+						<p class="cost"><span>$ </span>147.000</p>
+						<div class="stars">
+							<!-- Dentro de esta etiqueta se pondrán las estrellas, estas son de muestra-->
+							<img src="img/stars.svg" alt="4.5 estrellas">
+							<div class="average">
+								<span>546</span>
+								<span>Valoraciones</span>
+							</div>
+						</div>
+					</div>
+					<!-- //Calificaciones -->
+				</div>
+			</article>
+
+			<!-- Actividad de usuario -->
+			<div class="user-activity rating">
+				<div class="user-info">
+					<div class="img">
+						<a href="#">
+							<img src="img/profile.png" alt="">
+						</a>
+					</div>
+					<div class="name-time-cont">
+						<a href="#" class="name">Juanito Juanes</a>
+						<a href="#" class="time">
+							<span>hace</span>
+							<span>1</span>
+							<span>hora</span>
+						</a>
+					</div>
+				</div>
+				<div class="body">
+					<p>
+						Ha valorado
+						<span class="object">el restaurante</span>
+						<a href="#" class="object-name">Mirador Mede</a> con una calificación de&nbsp
+						<img src="img/grey-stars.svg" alt="">
+					</p>
+				</div>
+				<div class="place-img" style="background: url(img/medellin.jpg) no-repeat center; background-size:cover;">
+					<div class="place-info">
+						<div class="info-cont">
+							<div class="actions">
+								<a class="go-to-map" href="#" title="Ver en mapa"><img src="img/icons/go-to-map.svg" alt=""></a>
+							</div>
+							<div class="review">
+								<img src="img/stars.svg" alt="">
+								<div class="average">
+									<span>546</span>
+									<span>valoraciones</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // Actividad de usuario -->
+
+			<article class="host">
+				<!-- Link al post -->
+				<a href="#">
+					<div class="img-title-cont">
+						<!-- la imagen de las publicaciones debe ser una imagen de background para poder modificar el contenedor independientemente del tamaño de la imagen -->
+						<div class="img" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
+						<div class="title-cont">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec erat sem, rutrum nec pulvinar cursus, imperdiet nec lectus. Integer sagittis ipsum sed urna malesuada, </h3>
+						</div>
+					</div>
+				</a>
+				<div class="post-info">
+					<!-- Este es el ícono que muestra el tipo de oferta, el color de la etiqueda depende de la clase que tenga el artículo, en este caso es innovate-->
+					<div class="post-type"><i>hostinghost</i></div>
+					<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec erat sem, rutrum nec pulvinar cursus, imperdiet nec lectus. Integer sagittis ipsum.</div>
+					<!-- Calificaciones -->
+					<div class="review">
+						<p class="cost"><span>$ </span>147.000</p>
+						<div class="stars">
+							<!-- Dentro de esta etiqueta se pondrán las estrellas, estas son de muestra-->
+							<img src="img/stars.svg" alt="4.5 estrellas">
+							<div class="average">
+								<span>546</span>
+								<span>Valoraciones</span>
+							</div>
+						</div>
+					</div>
+					<!-- //Calificaciones -->
+				</div>
+			</article>
+
+			<article class="social">
+				<!-- Link al post -->
+				<a href="#">
+					<div class="img-title-cont">
+						<!-- la imagen de las publicaciones debe ser una imagen de background para poder modificar el contenedor independientemente del tamaño de la imagen -->
+						<div class="img" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
+						<div class="title-cont">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec erat sem, rutrum nec pulvinar cursus, imperdiet nec lectus. Integer sagittis ipsum sed urna malesuada, </h3>
+						</div>
+					</div>
+				</a>
+				<div class="post-info">
+					<!-- Este es el ícono que muestra el tipo de oferta, el color de la etiqueda depende de la clase que tenga el artículo, en este caso es innovate-->
+					<div class="post-type"><i>socialhost</i></div>
+					<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec erat sem, rutrum nec pulvinar cursus, imperdiet nec lectus. Integer sagittis ipsum.</div>
+					<!-- Calificaciones -->
+					<div class="review">
+						<p class="cost"><span>$ </span>147.000</p>
+						<div class="stars">
+							<!-- Dentro de esta etiqueta se pondrán las estrellas, estas son de muestra-->
+							<img src="img/stars.svg" alt="4.5 estrellas">
+							<div class="average">
+								<span>546</span>
+								<span>Valoraciones</span>
+							</div>
+						</div>
+					</div>
+					<!-- //Calificaciones -->
+				</div>
+			</article>
+			<article class="enjoy full-width">
+				<!-- Link al post -->
+				<a href="#">
+					<div class="img-title-cont">
+						<!-- la imagen de las publicaciones debe ser una imagen de background para poder modificar el contenedor independientemente del tamaño de la imagen -->
+						<div class="img" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
+						<div class="title-cont">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec erat sem, rutrum nec pulvinar cursus, imperdiet nec lectus. Integer sagittis ipsum sed urna malesuada, </h3>
+						</div>
+					</div>
+				</a>
+				<div class="post-info">
+					<!-- Este es el ícono que muestra el tipo de oferta, el color de la etiqueda depende de la clase que tenga el artículo, en este caso es innovate-->
+					<div class="post-type"><i>enjoyhost</i></div>
+					<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit Donec erat sem, rutrum nec pulvinar cursus, imperdiet nec lectus. Integer sagittis ipsum.</div>
+					<!-- Calificaciones -->
+					<div class="review">
+						<p class="cost"><span>$ </span>147.000</p>
+						<div class="stars">
+							<!-- Dentro de esta etiqueta se pondrán las estrellas, estas son de muestra-->
+							<img src="img/stars.svg" alt="4.5 estrellas">
+							<div class="average">
+								<span>546</span>
+								<span>Valoraciones</span>
+							</div>
+						</div>
+					</div>
+					<!-- //Calificaciones -->
+				</div>
+			</article>
+
+		</main>
+		<!-- //Contenido principal (posts) -->
+	</div>
+	<footer>
+
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,452 @@
+@import "variables";
+.post-column {
+
+    .info {
+      margin-bottom: 35px;
+
+      .icon {
+        margin-bottom: 5px;
+
+        img {
+        width: 31px;
+        height: 31px;
+        vertical-align: middle;
+        margin-right: 5px;
+
+        }
+        span{
+          vertical-align: middle;
+          color: $grey;
+          font-weight: 600;
+
+        }
+      }
+      .autor {
+
+        .title {
+          color: $grey;
+          font-size: 0.9em;
+          margin-bottom: 3px;
+
+        }
+        .profile {
+          margin-bottom: 13px;
+
+          .img-cont{
+            display: inline-block;
+            vertical-align: top;
+            @include border-radius();
+            overflow: hidden;
+            width: 50px;
+            height: 50px;
+            margin-right: 5px;
+
+              img {
+                width: 50px;
+                height: 50px;
+
+            }
+          }
+          .name-review-cont {
+            display: inline-block;
+            vertical-align: top;
+            color: $darkGrey;
+
+            span {
+              color: $grey;
+              font-weight: 600;
+            }
+
+            img{
+              width: 100px;
+              height: 16px;
+              display: block;
+              margin-top: 3px;
+            }
+
+            .average {
+
+              span {
+                font-size: 0.9em;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .date {
+        margin-bottom: 15px;
+
+        .title {
+          color: $grey;
+          font-size: 0.9em;
+        }
+
+        span {
+          color: $darkGrey;
+          font-weight: 600;
+        }
+      }
+      .review {
+        margin-bottom: 10px;
+
+        .title {
+          color: $grey;
+          font-size: 0.9em;
+          margin-bottom: 3px;
+        }
+
+        img{
+          width: 130px;
+          height:20px;
+        }
+
+        .average {
+          margin-top: -5px;
+
+          span {
+            color: $grey;
+            font-size: 0.9em;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .photos {
+      margin-bottom: 35px;
+
+      .icon {
+        margin-bottom: 10px;
+
+        img {
+          width: 31px;
+          height: 31px;
+          vertical-align: middle;
+          margin-right: 5px;
+
+        }
+        span {
+          vertical-align: middle;
+          color: $grey;
+          font-weight: 600;
+
+        }
+      }
+      .cont{
+
+        div {
+          @include border-radius();
+          width: 160px;
+          height: 160px;
+          display: inline-block;
+          margin-right: 6px;
+          margin-bottom: 6px;
+          cursor: pointer;
+          background-color: $lightGrey!important;
+        }
+
+        div:hover {
+          background-size: 208%!important;
+        }
+
+        div:nth-child(even){
+          margin-right: 0px;
+        }
+      }
+    }
+
+    .recomendation {
+      margin-bottom: 35px;
+
+      .icon {
+        margin-bottom: 10px;
+
+        img {
+          width: 31px;
+          height: 31px;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+
+        span {
+          vertical-align: middle;
+          color: $grey;
+          font-weight: 600;
+        }
+      }
+      .cont {
+
+        .img {
+          @include border-top-radius();
+          overflow: hidden;
+          height: 100px;
+
+          .title {
+            @include gradient-right();
+            height: 25px;
+            position: relative;
+            top: 75px;
+
+            span {
+              height: 20px;
+              display: block;
+              text-align: right;
+              color: #fff;
+              margin: 0 5px;
+              overflow: hidden;
+            }
+          }
+        }
+        .info {
+          margin-bottom: 20px;
+
+          .post-type{
+            display: inline-block;
+            vertical-align: top;
+
+            i{
+              @include border-radius-dynamic(5px);
+                padding: 3px 6px;
+                text-transform: uppercase;
+                font-size: 0.57em;
+                color: #fff;
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                letter-spacing: 0.07em;
+                margin-top: -4px;
+                background-color: $innovate-color;
+            }
+          }
+          img{
+            vertical-align: top;
+            width: 110px;
+            height: 18px;
+            margin-top: 4px;
+            float: right;
+          }
+        }
+      }
+
+      .innovate {
+
+      }
+      .host {
+
+      }
+      .learn {
+
+      }
+      .social {
+
+      }
+      .life {
+
+      }
+      .enjoy {
+
+      }
+    }
+  }
+
+.post-body {
+  margin-right: 17px;
+
+    .banner{
+      @include border-top-radius();
+      height: 250px;
+      overflow: hidden;
+
+      .title-cont {
+        @include gradient();
+        width: 300px;
+        height: inherit;
+        position: relative  ;
+
+        h1 {
+          color: #fff;
+          font-size: 2em;
+          padding: 10px;
+          position: absolute;
+          bottom: 0;
+          max-width: 300px;
+          max-height: 240px;
+          overflow: hidden;
+        }
+      }
+    }
+    .post-type {
+      display: inline-block;
+      vertical-align: top;
+      margin: 3px 10px 10px 0;
+
+      i {
+        @include border-radius-dynamic(5px);
+          padding: 4px 7px;
+          text-transform: uppercase;
+          font-size: 0.6em;
+          color: #fff;
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          letter-spacing: 0.07em;
+          margin-top: -4px;
+      }
+
+      .innovate {
+        background-color: $innovate-color;
+      }
+
+      .learn {
+        background-color: $learn-color;
+      }
+
+      .life {
+        background-color: $life-color;
+      }
+
+      .enjoy {
+        background-color: $enjoy-color;
+      }
+
+      .social {
+        background-color: $social-color;
+      }
+
+      .host {
+        background-color: $hosting-color;
+      }
+
+    }
+
+    .main-content {
+      max-width: 600px;
+      display: inline-block;
+
+      .cont {
+        margin-bottom: 25px;
+
+        h2{
+          color: $grey;
+          font-size: 1.4em;
+          margin-bottom: 10px;
+        }
+      }
+
+      .type {
+
+        p{
+          color: $darkGrey;
+
+        }
+      }
+
+      .amenities {
+        h2{
+          margin-bottom: 14px;
+        }
+
+        div {
+          margin-bottom: 10px;
+
+          img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+
+          }
+          span {
+            color: $grey;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .location {
+
+        span{
+          color: $grey;
+        }
+
+        .map-cont{
+          @include border-radius();
+          overflow: hidden;
+          margin-top: 5px;
+
+          iframe {
+            width: 100%;
+            height: 400px;
+          }
+        }
+      }
+
+      .services {
+
+        table {
+          @include border-radius();
+          overflow: hidden;
+          border: 1px solid $grey;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        tbody{
+          @include border-radius();
+          overflow: hidden;
+        }
+        tr:first-child{
+          @include border-radius();
+          overflow: hidden;
+        }
+        th{
+          background-color: $grey;
+          border: 1px solid $grey;
+          color: #fff;
+          font-size: 1.05em;
+          padding: 10px 13px;
+          text-align: left;
+        }
+        th:first-of-type {
+          border-right: 1px solid $lightGrey;
+        }
+        td {
+          padding: 13px;
+          color: $grey;
+          border: 1px solid $lightGrey;
+          background-color: #f7f7f7;
+        }
+      }
+    }
+    .contact {
+      margin: 50px 0 100px 0;
+
+      .contact-button {
+        @include border-radius();
+        overflow: hidden;
+        display: block;
+        width: 150px;
+        background-color: $mainColor;
+        padding: 10px;
+        margin: 0 auto;
+
+        img {
+          @include all-transition(100ms);
+          width: 30px;
+          height: 30px;
+          vertical-align: middle;
+          margin-right: 15px;
+        }
+        span{
+          vertical-align: middle;
+          font-weight: 600;
+          font-size: 1.3em;
+          color: #fff;
+        }
+      }
+      .contact-button:hover img {
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+    }
+  }

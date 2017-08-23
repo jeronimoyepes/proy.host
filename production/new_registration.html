@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <title>Sign Up | HOSTAYNI Platform</title>
+
+  <!-- Medium Style Editor -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+<body class="grey-background">
+  <div class="wrapper">
+    <!-- Botones de registro e inicio de sesión -->
+    <header>
+      <div class="registration">
+        <a href="/accounts/signup/">Join</a><a href="/accounts/login/">Login!</a>
+      </div>
+    </header>
+    <div class="form-cont">
+      <div class="main">
+        <a href="/" class="logo-cont">
+        <img src="https://s3-sa-east-1.amazonaws.com/ihost-project/assets/img/Logo-slogan.png">
+      </a>
+        <form method="POST">
+          <input type="hidden" name="csrfmiddlewaretoken" value="QZcPPYw8CqtvY9ATkl56L7K8gh9SQHfSdZf5az3uUNEuWYfj7PNHsnMH9Tz47Vo7">
+          <h3>Join HOSTAYNI for free</h3>
+
+
+          <input autofocus="" id="id_email" maxlength="254" name="email" type="email" required="">
+          <input id="id_password1" name="password1" type="password" required="">
+          <input id="id_password2" name="password2" type="password" required="">
+          <div class="rad-cont">
+            <ul id="r1">
+              <li><label for="r1_0"><input id="r1_0" name="user_type" type="radio" value="P" required="">Person</label></li>
+              <li><label for="r1_1"><input id="r1_1" name="user_type" type="radio" value="I" required="">Institution</label></li>
+            </ul>
+          </div>
+
+          <!-- Agregué estos dos divs para poder alinear el boton a la derecha -->
+          <div class="submit-button-cont">
+            <div>
+              <input type="image" src="https://s3-sa-east-1.amazonaws.com/ihost-project/assets/img/icons/ok.png" alt="Submit" width="48" height="48">
+              <input type="submit" value="Sign up" class="submit-button">
+            </div>
+          </div>
+
+        </form>
+        <!-- Recuerda poner este elemento -->
+        <p class="legal">Al registrarse acepta nuestros <a href="#">Términos de uso</a> y <a href="#">Política de privacidad</a></p>
+      </div>
+      <div class="portrait">
+        <div class="img-cont" style="background: url('https://s3-sa-east-1.amazonaws.com/ihost-project/assets/img/canada-toronto.jpg') no-repeat center; background-size:cover;"></div>
+        <span>Toronto, Canadá</span>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  <br>
+  <footer>
+    <p align="center">2017 © HOSTAYNI Platform. All rights reserved.</p>
+  </footer>
+
+
+</body>
+
+</html>

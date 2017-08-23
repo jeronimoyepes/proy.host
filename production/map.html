@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es-ES" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>Hostayni</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slimscroll.js"></script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="top-logo">
+				<img src="img/Logo-top.png" alt="">
+			</div>
+			<div class="profile-options">
+				<div class="img">
+					<!-- Imagen de perfil -->
+					<img src="img/profile.png" alt="">
+				</div>
+				<div class="name-options-cont">
+					<div class="name">
+						<p>Nombre del usuario</p>
+					</div>
+					<div class="options">
+						<img src="img/icons/gear.svg" alt="">
+						<div class="drop-down">
+							<ul>
+								<li><a href="#">Configuración</a></li>
+								<li class="line"></li>
+								<li><a href="#">Cerrar sesión</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="main-map">
+		<!-- mapa -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1983.0517024099001!2d-75.56337732682343!3d6.25010353077667!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1501007278560" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!--parte inferior de la pagina donde aparecen los resultados de la búsqueda y "mis lugares"-->
+		<div class="results-cont">
+			<!-- resultados de la busqueda en el mapa -->
+			<div class="map-results-cont">
+				<div class="button">
+					<img src="img/icons/search-result.svg">
+					<span>Resultado de busqueda</span>
+				</div>
+				<div id="map-results">
+					<!-- la clase life debe agregarse dinamicamente de acuerdo a la categoria. -->
+					<div class="result life">
+						<div class="icon-cont">
+							<img src="img/icons/life-lines.svg" alt="">
+						</div>
+						<div class="main-info">
+							<h3>Restaurante el poblado</h3>
+							<div class="adress-cont"><span>Dir:</span> <span>Cll 34a # 56-23a</span></div>
+							<p class="description">Tempor orci ipsum sit amet elit. Aliquam erat volutpat. Etiam porttitor leo purus, quis laoreet metus egestas eget.</p>
+						</div>
+						<div class="transport">
+							<div class="schedule">
+								<span class="day">Lunes-sábado</span>
+								<span>7:00am - 8:00pm</span>
+							</div>
+							<div class="arrive-time">
+								<div class="car">
+									<i class="icon"><img src="img/icons/car.svg" alt=""></i>
+									<span>5 min</span>
+								</div>
+								<div class="walk">
+									<i class="icon"><img src="img/icons/walk.svg" alt=""></i>
+									<span>20 min</span>
+								</div>
+							</div>
+						</div>
+						<div class="img" style="background: url(img/appoinment.jpg) no-repeat center; background-size:cover;">
+							<div class="info">
+								<div class="cont">
+									<!-- Link para verlo en el mapa -->
+									<a href="#">
+										<img src="img/icons/go-to-map.svg" alt="">
+									</a>
+									<div class="rating">
+										<img src="img/stars.svg" alt="">
+										<span>355 Valoraciones</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="result host">
+						<div class="icon-cont">
+							<img src="img/icons/host-lines.svg" alt="">
+						</div>
+						<div class="main-info">
+							<h3>Restaurante el poblado</h3>
+							<div class="adress-cont"><span>Dir:</span> <span>Cll 34a # 56-23a</span></div>
+							<p class="description">Tempor orci ipsum sit amet elit. Aliquam erat volutpat. Etiam porttitor leo purus, quis laoreet metus egestas eget.</p>
+						</div>
+						<div class="transport">
+							<div class="schedule">
+								<span class="day">Lunes-sábado</span>
+								<span>7:00am - 8:00pm</span>
+							</div>
+							<div class="arrive-time">
+								<div class="car">
+									<i class="icon"><img src="img/icons/car.svg" alt=""></i>
+									<span>5 min</span>
+								</div>
+								<div class="walk">
+									<i class="icon"><img src="img/icons/walk.svg" alt=""></i>
+									<span>20 min</span>
+								</div>
+							</div>
+						</div>
+						<div class="img" style="background: url(img/appoinment.jpg) no-repeat center; background-size:cover;">
+							<div class="info">
+								<div class="cont">
+									<!-- Link para verlo en el mapa -->
+									<a href="#">
+										<img src="img/icons/go-to-map.svg" alt="">
+									</a>
+									<div class="rating">
+										<img src="img/stars.svg" alt="">
+										<span>355 Valoraciones</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="result life">
+						<div class="icon-cont">
+							<img src="img/icons/life-lines.svg" alt="">
+						</div>
+						<div class="main-info">
+							<h3>Restaurante el poblado</h3>
+							<div class="adress-cont"><span>Dir:</span> <span>Cll 34a # 56-23a</span></div>
+							<p class="description">Tempor orci ipsum sit amet elit. Aliquam erat volutpat. Etiam porttitor leo purus, quis laoreet metus egestas eget.</p>
+						</div>
+						<div class="transport">
+							<div class="schedule">
+								<span class="day">Lunes-sábado</span>
+								<span>7:00am - 8:00pm</span>
+							</div>
+							<div class="arrive-time">
+								<div class="car">
+									<i class="icon"><img src="img/icons/car.svg" alt=""></i>
+									<span>5 min</span>
+								</div>
+								<div class="walk">
+									<i class="icon"><img src="img/icons/walk.svg" alt=""></i>
+									<span>20 min</span>
+								</div>
+							</div>
+						</div>
+						<div class="img" style="background: url(img/appoinment.jpg) no-repeat center; background-size:cover;">
+							<div class="info">
+								<div class="cont">
+									<!-- Link para verlo en el mapa -->
+									<a href="#">
+										<img src="img/icons/go-to-map.svg" alt="">
+									</a>
+									<div class="rating">
+										<img src="img/stars.svg" alt="">
+										<span>355 Valoraciones</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- "mis lugares" -->
+			<div class="my-places">
+				<div class="button">
+					<img src="img/icons/pin.svg">
+					<span>Lugares</span>
+				</div>
+				<div id="myPlaces-result">
+					<!-- Cuidado con la clase "learn" debe ser agregada dinámicamente desde el servidor de acuerdo al la categoría -->
+					<div class="place learn">
+						<div class="title">
+							<img src="img/icons/learn-lines.svg" alt="">
+							<h3>Universidad eafit</h3>
+						</div>
+						<div class="img" style="background: url(img/appoinment.jpg) no-repeat center; background-size:cover;">
+							<div class="info">
+								<div class="cont">
+									<!-- Link para verlo en el mapa -->
+									<a href="#">
+											<img src="img/icons/go-to-map.svg" alt="">
+										</a>
+									<div class="rating">
+										<img src="img/stars.svg" alt="">
+										<span>355 Valoraciones</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="place life">
+						<div class="title">
+							<img src="img/icons/life-lines.svg" alt="">
+							<h3>Restaurante El Poblado</h3>
+						</div>
+						<div class="img" style="background: url(img/appoinment.jpg) no-repeat center; background-size:cover;">
+							<div class="info">
+								<div class="cont">
+									<a href="#">
+											<img src="img/icons/go-to-map.svg" alt="">
+										</a>
+									<div class="rating">
+										<img src="img/stars.svg" alt="">
+										<span>355 Valoraciones</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="place learn">
+						<div class="title">
+							<img src="img/icons/learn-lines.svg" alt="">
+							<h3>Universidad eafit</h3>
+						</div>
+						<div class="img" style="background: url(img/appoinment.jpg) no-repeat center; background-size:cover;">
+							<div class="info">
+								<div class="cont">
+									<!-- Link para verlo en el mapa -->
+									<a href="#">
+											<img src="img/icons/go-to-map.svg" alt="">
+										</a>
+									<div class="rating">
+										<img src="img/stars.svg" alt="">
+										<span>355 Valoraciones</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="place life">
+						<div class="title">
+							<img src="img/icons/life-lines.svg" alt="">
+							<h3>Restaurante El Poblado</h3>
+						</div>
+						<div class="img" style="background: url(img/appoinment.jpg) no-repeat center; background-size:cover;">
+							<div class="info">
+								<div class="cont">
+									<a href="#">
+											<img src="img/icons/go-to-map.svg" alt="">
+										</a>
+									<div class="rating">
+										<img src="img/stars.svg" alt="">
+										<span>355 Valoraciones</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

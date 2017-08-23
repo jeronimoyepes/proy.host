@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <title>Login | HOSTAYNI Platform</title>
+
+  <!-- Medium Style Editor -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body class="grey-background">
+  <div class="wrapper">
+    <!-- Botones de registro e inicio de sesión -->
+    <header>
+
+      <div class="registration">
+        <a href="/accounts/signup/">Join</a><a href="/accounts/login/">Login!</a>
+      </div>
+
+    </header>
+
+
+
+    <div class="form-cont">
+
+      <div class="main">
+        <a href="/" class="logo-cont">
+        <img src="https://s3-sa-east-1.amazonaws.com/ihost-project/assets/img/Logo-slogan.png">
+      </a>
+
+
+        <form action="/accounts/login/" method="POST">
+          <input type="hidden" name="csrfmiddlewaretoken" value="Vqt8XPOv9ETBLsmRNXsowbTZeYzmGvSVQjgdqCN4iO9Y1YdQ43n62qH5UUBHCpcf">
+
+          <h3>Login</h3>
+
+
+
+          <input autofocus="" id="id_username" maxlength="254" name="username" type="text" required="">
+          <input id="id_password" name="password" type="password" required="">
+            <a href="../password_reset/">Forgot your password?</a>
+
+          <!-- boton de submit -->
+          <div class="submit-button-cont">
+            <div>
+              <input type="image" src="https://s3-sa-east-1.amazonaws.com/ihost-project/assets/img/icons/ok.png" alt="Submit" width="48" height="48">
+              <input type="submit" value="Sign up" class="submit-button">
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <!-- no olvides agregar el retrato -->
+      <div class="portrait">
+        <div class="img-cont" style="background: url('https://s3-sa-east-1.amazonaws.com/ihost-project/assets/img/canada-toronto.jpg') no-repeat center; background-size:cover;"></div>
+        <span>Toronto, Canadá</span>
+      </div>
+
+    </div>
+
+    <!-- cuidado con la posisicon del footer la tenias mal -->
+    <footer>
+      <p align="center">2017 © HOSTAYNI Platform. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

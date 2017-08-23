@@ -1,0 +1,103 @@
+/*COLORES*/
+/*color principal*/
+$mainColor: #dbd900;
+// verde
+$hosting-color: #006533;
+// Naraja
+$learn-color: #e74e1b;
+// Azul
+$innovate-color: #1d71b6;
+// Magenta
+$enjoy-color: #d73380;
+// Amarillo-anaranjado
+$social-color: #f19125;
+// Gris azulado
+$life-color: #3f4e55;
+/*Gris claro*/
+$lightGrey: #d6d6d6;
+ /*Gris*/
+$grey: #706f6f;
+/*Gris oscuro*/
+$darkGrey: #4c4c4c;
+/*Alerta*/
+$alert: #f19125;
+/*Fuente principal*/
+$mainFont: 'Source Sans Pro', sans-serif;
+// Fuente corporativa
+$corpoFont: 'Montserrat', sans-serif;
+/*Padding para los inputs de texto*/
+$inputTextPadding: 5px 10px;
+/*Fondo de textura gris*/
+$textureBackground: url("../img/background-text.jpg");
+/*Rádio de las puntas*/
+@mixin border-radius() {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+}
+@mixin border-radius-dynamic($rad) {
+	-webkit-border-radius: $rad;
+	-moz-border-radius: $rad;
+	-ms-border-radius: $rad;
+	border-radius: $rad;
+}
+// Esquinas superiores redondeadas para los posts
+@mixin border-top-radius() {
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	-ms-border-top-left-radius: 10px;
+	-ms-border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+@mixin border-right-radius() {
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	-ms-border-top-right-radius: 10px;
+	-ms-border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+@mixin border-bottom-radius() {
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	-ms-border-bottom-left-radius: 10px;
+	-ms-border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+// Degradado de fondo para los títulos de las publicaciones
+@mixin gradient() {
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.4) 0%, rgba(125,185,232,0) 100%);
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.4) 0%,rgba(125,185,232,0) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,0.4) 0%,rgba(125,185,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#66000000', endColorstr='#007db9e8',GradientType=1 );
+}
+@mixin dark-gradient() {
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.46) 0%, rgba(125,185,232,0) 100%) !important;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.46) 0%,rgba(125,185,232,0) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,0.46) 0%,rgba(125,185,232,0) 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#66000000', endColorstr='#007db9e8',GradientType=1 );
+}
+// Degradado de fondo para los títulos de las publicaciones alineado a la derecha
+@mixin gradient-right() {
+	background: -moz-linear-gradient(right, rgba(0,0,0,0.4) 0%, rgba(125,185,232,0) 100%);
+	background: -webkit-linear-gradient(right, rgba(0,0,0,0.4) 0%,rgba(125,185,232,0) 100%);
+	background: linear-gradient(to left, rgba(0,0,0,0.4) 0%,rgba(125,185,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#66000000', endColorstr='#007db9e8',GradientType=1 );
+}
+// Transición para la propiedad height de 300 milisegundos
+@mixin all-transition ($time) {
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}

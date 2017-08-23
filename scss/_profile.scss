@@ -1,0 +1,450 @@
+.profile-extras {
+  .offert-buttons {
+    margin-bottom: 30px;
+
+    h3 {
+      color: #706f6f;
+      font-weight: 600;
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 43px;
+      margin-right: 3px;
+
+      img {
+        vertical-align: top;
+        width: 40px;
+        height: 40px;
+        margin-top: 3px;
+        @include all-transition(30ms);
+      }
+
+      img:hover {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .places {
+    margin-bottom: 30px;
+
+    .button {
+      margin-bottom: 10px;
+
+      img {
+        height: 31px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      span {
+        vertical-align: middle;
+        color: $grey;
+        font-weight: 600;
+      }
+    }
+
+    .myPlaces-search {
+      margin-bottom: 20px;
+
+      select {
+        border: 1px solid $lightGrey;
+        @include border-radius ();
+        padding: $inputTextPadding();
+        width: 150px;
+        color: $grey;
+        overflow: hidden;
+        margin-right: 10px;
+      }
+
+      img {
+        height: 25px;
+        width: 25px;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-top: 3px;
+      }
+
+      img:hover {
+        margin-top: 0;
+      }
+    }
+
+    #myPlaces-result {
+      .place:hover {
+        height: 120px;
+      }
+
+      .place {
+        margin: 5px 15px 5px 0;
+        height: 40px;
+        overflow-y: hidden;
+        @include all-transition(200ms);
+
+        .title {
+          padding: 5px;
+          cursor: default;
+
+          img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+          }
+
+          h3 {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 1.3em;
+            vertical-align: middle;
+          }
+        }
+
+        .img {
+          overflow: hidden;
+          @include border-bottom-radius();
+          height: 70px;
+
+          .info {
+            height: 46px;
+            position: relative!important;
+            top: 24px!important;
+            right: 0;
+            @include gradient-right();
+
+            .cont {
+              float: right;
+              height: 40px;
+              margin: 4px 6px 3px;
+            }
+
+            a {
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 8px;
+
+              img {
+                height: 20px;
+                width: 12.41px;
+              }
+            }
+
+            .rating {
+              display: inline-block;
+              vertical-align: middle;
+
+              img {
+                display: block;
+                height: 20px;
+              }
+
+              span {
+                display: block;
+                color: #fff;
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+      }
+
+      .host {
+        h3 {
+          color: $hosting-color;
+        }
+      }
+
+      .learn {
+        h3 {
+          color: $learn-color;
+        }
+      }
+
+      .innovate {
+        h3 {
+          color: $innovate-color;
+        }
+      }
+
+      .life {
+        h3 {
+          color: $life-color;
+        }
+      }
+
+      .enjoy {
+        h3 {
+          color: $enjoy-color;
+        }
+      }
+
+      .social {
+        h3 {
+          color: $social-color;
+        }
+      }
+    }
+  }
+
+  .blog {
+    .button {
+      margin-bottom: 10px;
+
+      img {
+        height: 31px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      span {
+        vertical-align: middle;
+        color: $grey;
+        font-weight: 600;
+      }
+    }
+
+    #blog-scroll {}
+
+    .blog-entry {
+      padding-right: 15px;
+      margin-bottom: 25px;
+
+      .title {
+        display: block;
+        font-size: 1em;
+        font-weight: 600;
+        color: $grey;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 20px;
+        margin-bottom: 5px;
+      }
+
+      .views {
+        display: inline-block;
+
+        img {
+          width: 15px;
+          height: 9.63px;
+          margin-right: 3px;
+        }
+
+        span {
+          color: $grey;
+        }
+      }
+
+      .rating {
+        display: inline-block;
+        float: right;
+
+        img {
+          width: 100px;
+          height: 15.52px;
+          vertical-align: middle;
+        }
+
+        span {
+          color: $grey;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+// información de perfil (columna de la izquierda)
+
+.profile-info {
+  display: inline-block;
+  width: 210px;
+  @include border-radius();
+  height: 100%;
+  padding: 20px;
+  overflow: hidden;
+
+  .info-cont {
+    color: $darkGrey;
+    margin-bottom: 15px;
+
+    span {
+      font-size: 0.95em;
+      display: block;
+    }
+
+    p {
+      font-weight: 600;
+      display: block;
+    }
+
+    .subtitle {
+      font-weight: 600;
+      font-size: 0.8em;
+      margin-bottom: 3px;
+      display: block;
+    }
+
+    i {
+      display: inline-block;
+      width: 22px;
+      height: 20px;
+      vertical-align: middle;
+
+      img {
+        margin: 1px 5px 1px 0;
+      }
+    }
+  }
+
+  .main-info {
+    margin-bottom: 30px;
+
+    .img-cont {
+      @include border-radius();
+      overflow: hidden;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .name-cont {
+      margin-bottom: 20px;
+
+      div {
+        display: inline-block;
+        width: 190px;
+        vertical-align: top;
+
+        p {
+          font-size: 1.3em;
+          font-weight: 600;
+          color: $darkGrey;
+          display: block;
+        }
+
+        span {
+          font-size: 0.95em;
+          color: $darkGrey;
+          display: block;
+        }
+      }
+
+      .status {
+        img {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+    .host-types {
+      font-family: $corpoFont;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.7em;
+
+      p {
+        margin-bottom: 3px;
+      }
+
+      .hosting {
+        color: $hosting-color;
+        font-family: inherit;
+      }
+
+      .innovate {
+        color: $innovate-color;
+        font-family: inherit;
+      }
+
+      .learn {
+        color: $learn-color;
+        font-family: inherit;
+      }
+
+      .life {
+        color: $life-color;
+        font-family: inherit;
+      }
+
+      .social {
+        color: $social-color;
+        font-family: inherit;
+      }
+
+      .enjoy {
+        color: $enjoy-color;
+        font-family: inherit;
+      }
+    }
+  }
+
+  .secondary-info {
+    .field-cont {
+      margin-bottom: 25px;
+
+      h3 {
+        color: $darkGrey;
+        margin-bottom: 10px;
+      }
+
+      .mb4 span {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
+#user-activity-main {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+
+  .post-form {
+    @include border-radius();
+    padding: 20px;
+
+    form {
+      .post-content-cont {
+        .post-content {
+          width: 100%;
+          max-width: 100%;
+          box-sizing: border-box;
+          @include border-radius();
+          padding: $inputTextPadding;
+          border: 1px solid $lightGrey;
+          min-height: 70px;
+          max-height: 200px;
+          vertical-align: top;
+        }
+
+        .pin-location {
+          width: 15px;
+          display: inline-block;
+          margin-top: 5px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .photos-cont {
+        .post-photo {
+          width: 0.1px;
+          height: 0.1px;
+          opacity: 0;
+          overflow: hidden;
+          position: absolute;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

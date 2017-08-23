@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es-ES" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Hostayni</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+	</script>
+
+	</script>
+</head>
+
+<body class="grey-background">
+	<div class="wrapper">
+		<!-- Perfil de usuario -->
+		<header>
+			<div class="top-logo">
+				<img src="img/Logo-top.png" alt="">
+			</div>
+			<div class="profile-options">
+				<div class="img">
+					<!-- Imagen de perfil -->
+					<img src="img/profile.png" alt="">
+				</div>
+				<div class="name-options-cont">
+					<div class="name">
+						<p>Nombre del usuario</p>
+					</div>
+					<div class="options">
+						<img src="img/icons/gear.svg" alt="">
+						<div class="drop-down">
+							<ul>
+								<li><a href="#">Configuración</a></li>
+								<li class="line"></li>
+								<li><a href="#">Cerrar sesión</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="offert-form">
+		<form class="stayhost" action="" method="">
+			<div class="head">
+				<div class="ofert-icon">
+					<img src="img/icons/hosting.svg" alt="">
+					<div class="title">
+						<h2>Stayhost</h2>
+						<span>Crear oferta</span>
+					</div>
+				</div>
+				<!-- Este deberia ser el boton para enviar el formulario, no se como hacer con input submit para ponerle tambien una imágen, no se que me puedes recomendar -->
+				<div class="accept">
+					<a href="#">
+							<img src="img/icons/ok.png" alt="">
+							<span>Aceptar</span>
+							</a>
+				</div>
+				<!-- botón opcional, creo que por el momento sería mejor no aplicar esta funcionalidad ya que había que hacer una pantalla de ofertas guardadas -->
+				<div class="save">
+					<a href="#">
+							<img src="img/icons/save.png" alt="">
+							<span>Guardar</span>
+							</a>
+				</div>
+			</div>
+			<div class="col margin-right">
+				<div class="formgroup">
+					<span>Nombre</span>
+					<input type="text" name="name" placeholder="Nombre del lugar de residencia">
+				</div>
+				<div class="formgroup">
+					<span>Tipo</span>
+					<select name="hostingType">
+								<option value="hotel">Hotel</option>
+								<option value="house">Vivienda</option>
+					</select>
+				</div>
+				<div class="formgroup images">
+					<span>Imágenes</span>
+					<div class="select-img">
+						<input type="file" class="photo-upload" id="photo-upload" name="photo-upload" accept="image/*" data-multiple-caption="{count} archivos" multiple >
+						<label for="photo-upload">
+							<img src="img/icons/photo-upload.svg" alt="">
+						</label>
+					</div>
+					<div class="cont">
+						<img src="" alt="">
+					</div>
+					<div class="cont">
+						<img src="" alt="">
+					</div>
+					<div class="cont">
+						<img src="" alt="">
+					</div>
+					<div class="cont">
+						<img src="" alt="">
+					</div>
+					<div class="cont">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="formgroup">
+					<span>Descripción</span>
+					<textarea name="description" placeholder="..."></textarea>
+				</div>
+				<div class="formgroup rad">
+					<span>Conveniencias</span>
+					<div class="rad-cont">
+						<input id="r1" type="checkbox" name="gym" value="gym"><label for="r1">Gimnasio</label>
+					</div>
+					<div class="rad-cont">
+						<input id="r2" type="checkbox" name="pool" value="pool"><label for="r2">Piscina</label>
+					</div>
+					<div class="rad-cont">
+						<input id="r3" type="checkbox" name="parking" value="parking"><label for="r3">Parqueader</label>
+					</div>
+					<div class="rad-cont">
+						<input id="r4" type="checkbox" name="restaurant" value="restaurant"><label for="r4">Restaurante</label>
+					</div>
+					<div class="rad-cont">
+						<input id="r5" type="checkbox" name="gym" value="gym"><label for="r5">Gimnasio</label>
+					</div>
+					<div class="rad-cont">
+						<input id="r6" type="checkbox" name="pool" value="pool"><label for="r6">Piscina</label>
+					</div>
+					<div class="rad-cont">
+						<input id="r7" type="checkbox" name="parking" value="parking"><label for="r7">Parqueader</label>
+					</div>
+					<div class="rad-cont">
+						<input id="r8" type="checkbox" name="restaurant" value="restaurant"><label for="r8">Restaurante</label>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="formgroup">
+					<span>Ubicación</span>
+					<input type="text" name="adress" placeholder="Dirección del lugar">
+					<div class="map-cont">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1983.0517024099001!2d-75.56337732682343!3d6.25010353077667!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1501007278560" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="formgroup">
+					<span>Precio</span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<footer>
+
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+@import url( 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i');
+@import url( 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import "variables";
+
+* {
+	padding: 0;
+	margin: 0;
+	clear: both;
+	list-style-type: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: $mainFont;
+	border: none;
+}
+
+*:focus {
+	outline-color: #c9eeff;
+}
+
+// input[type=checkbox],
+// input[type=radio] {
+// 	/* esconder los inputs originales */
+// 	visibility: hidden;
+// 	position: absolute;
+// }
+
+input[type=checkbox],
+input[type=radio] {
+  /*nuevo estilo de input*/
+  height: 14px;
+  width: 14px;
+  margin-right: 5px;
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #d6d6d6;
+  background: #fff;
+  cursor: pointer;
+}
+
+
+// input[type=checkbox]:checked + label:before,
+// input[type=radio]:checked + label:before {
+//   /*nuevo estilo de input chekeado*/
+//   background: #dbd900;
+//   border-color: #fff;
+// }
+
+// input[type=radio] + label:before {
+// 	/*Hacer redondo el input radio*/
+// 	border-radius: 50%;
+// }
+
+// .rad-cont label {
+// 	color: $grey;
+// 	font-size: 0.95em;
+// 	cursor: pointer;
+// }
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+header {
+	margin: 20px 0 10px 0;
+	height: 70px;
+
+	.top-logo {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.breadcrumbs {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 13px 0 0 30px;
+		font-size: 0.9em;
+
+		p{
+			display: inline-block;
+			vertical-align: baseline;
+			color: $grey;
+		}
+	}
+
+	.registration {
+		width: 300px;
+		margin: 0 0 0 auto;
+		height: 50px;
+		border-bottom: 1px solid $darkGrey;
+		overflow: hidden;
+
+		a {
+			color: $darkGrey;
+			display: inline-block;
+			width: 50%;
+			text-align: center;
+			height: inherit;
+			padding-top: 20px;
+			font-size: 0.95em;
+		}
+
+		a:hover {
+			background-color: $lightGrey;
+		}
+	}
+
+	.profile-options {
+		display: inline-block;
+		height: 50px;
+		overflow: visible;
+		width: 300px;
+		float: right;
+
+		.img {
+			@include border-radius();
+			overflow: hidden;
+			width: 50px;
+			height: inherit;
+			float: right;
+
+			img {
+				display: inline-block;
+				width: inherit;
+				height: auto;
+				cursor: pointer;
+			}
+		}
+
+		.name-options-cont {
+			display: inline-block;
+			height: inherit;
+			width: 240px;
+			margin: 5px 0 0 auto;
+
+			.name {
+				color: $grey;
+				overflow: hidden;
+				height: 21px;
+
+				p{
+					text-align: right;
+					cursor: pointer;
+				}
+			}
+
+			.options {
+				width: 15px;
+				margin: 0 0 0 auto;
+
+				img{
+					width: 15px;
+					height: 15px;
+					cursor: pointer;
+				}
+
+				.drop-down{
+					display: none;
+					position: relative;
+					top: 0;
+					right: 180px;
+					width: 170px;
+					height: auto;
+					padding: 13px;
+					border: 1px solid $lightGrey;
+					background-color: #fff;
+
+					ul {
+
+						li{
+
+							a {
+								color: $grey;
+								font-size: 0.9em;
+							}
+						}
+
+						.line {
+							border-bottom: 2px solid $lightGrey;
+							margin: 7px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+main {
+	display: inline-block;
+	width: 930px;
+}
+// Estilos de la columna donde esta el mapa y los filtros de búsqueda
+@import "search-column";
+// Estilos del formulario de registro-inicio de sesión
+@import "regForm";
+// Estilos de los artículos (ofertas)
+@import "articles";
+@import "user-posts";
+@import "profile";
+@import "ofert-form";
+@import "main-map";

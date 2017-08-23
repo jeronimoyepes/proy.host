@@ -1,0 +1,204 @@
+.offert-form {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  form {
+    width: auto;
+
+    .head {
+      margin-bottom: 50px;
+
+      .ofert-icon {
+        display: inline-block;
+        margin-right: 60px;
+
+        img {
+          width: 90px;
+          height: 90px;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+
+        .title {
+          display: inline-block;
+          vertical-align: middle;
+
+          h2 {
+            font-family: $corpoFont;
+            color: $hosting-color;
+            font-weight: 700;
+            font-size: 1.5em;
+            text-transform: uppercase;
+          }
+
+          span {
+            display: block;
+            font-size: 0.95em;
+            color: $grey;
+          }
+        }
+      }
+
+      .accept {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 20px;
+
+        img {
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+
+        span {
+          font-weight: 600;
+          color: $grey;
+          vertical-align: middle;
+        }
+      }
+
+      .save {
+        display: inline-block;
+        vertical-align: bottom;
+
+        img {
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+
+        span {
+          font-weight: 600;
+          color: $grey;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .col {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: -4px;
+      width: 48%;
+    }
+
+    .margin-right {
+      margin-right: 20px;
+    }
+
+  .images {
+
+    .cont {
+      display: inline-block;
+      vertical-align: top;
+      width: 78px;
+      height: 78px;
+      border: 1px solid $lightGrey;
+      margin: 0 2px 4px 0;
+      background-color: #fff;
+    }
+
+    .select-img {
+      display: inline-block;
+      margin-right: 2px;
+
+      .photo-upload {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .photo-upload + label {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        background-color: $mainColor;
+      }
+
+      .photo-upload + label:hover img {
+        width: 30px;
+        height: 30px;
+        margin: 25px;
+      }
+
+      .photo-upload + label img {
+        @include all-transition(100ms);
+        width: 26px;
+        height: 26px;
+        margin: 27px;
+      }
+    }
+  }
+
+    .formgroup {
+      margin-bottom: 15px;
+
+      span {
+        display: block;
+        color: $grey;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        @include border-radius();
+        padding: $inputTextPadding;
+        border: 1px solid $lightGrey;
+      }
+
+      textarea {
+        width: 100%;
+        max-width: 100%;
+        height: 100px;
+        max-height: 150px;
+        box-sizing: border-box;
+        @include border-radius();
+        padding: $inputTextPadding;
+        border: 1px solid $lightGrey;
+        overflow: hidden;
+      }
+
+      select {
+        width: 100%;
+        color: $grey;
+        @include border-radius();
+        padding: $inputTextPadding;
+        border: 1px solid $lightGrey;
+      }
+
+      .rad-cont {
+        display: inline-block;
+        width: 160px;
+
+        label {
+          font-weight: 600;
+          color: $grey;
+          font-size: 0.95em;
+        }
+      }
+    }
+
+    .rad {
+      .rad-cont {
+        margin-bottom: 15px;
+      }
+    }
+
+    .map-cont {
+      @include border-radius ();
+      overflow: hidden;
+      height: 400px;
+      margin-top: 10px;
+
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
+}
