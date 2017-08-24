@@ -44,5 +44,4 @@ $(function(){
     };
 
     $('#blog-scroll').slimScroll(slimScrollParam);
-    $('#blog-scroll').slimScroll(slimScrollParam);
 });

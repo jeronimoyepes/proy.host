@@ -62,6 +62,23 @@ input[type=radio] {
 	margin: 0 auto;
 	padding: 0 10px;
 }
+h1, h2, h3, h4, h5, h6 {
+	color: $darkGrey;
+}
+
+p {
+	color: $darkGrey;
+	a {
+		color: $darkGrey;
+		text-decoration: underline;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	a:visited {
+		color: $grey;
+	}
+}
 
 header {
 	margin: 20px 0 10px 0;
@@ -201,4 +218,6 @@ main {
 @import "user-posts";
 @import "profile";
 @import "ofert-form";
+@import "offert";
 @import "main-map";
+@import "view-blog";

@@ -6,9 +6,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<link rel="stylesheet" href="css/ofert.css" type="text/css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slimscroll.js"></script>
 
 	</script>
 
@@ -45,7 +45,7 @@
 			</div>
 		</header>
 		<!-- Columna a la derecha -->
-		<div class="search-column">ss
+		<div class="search-column">
 			<div class="post-column">
 				<div class="info">
 					<div class="icon">
@@ -85,50 +85,50 @@
 						</div>
 					</div>
 				</div>
-				<div class="photos">
-					<div class="icon">
-						<img src="img/icons/photo.svg" alt="">
-						<span>Fotos</span>
-					</div>
-					<div class="cont">
-						<div id="photo1" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
-						<div id="photo2" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
-						<div id="photo3" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
-						<div id="photo4" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
-						<div id="photo5" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
-						<div id="photo6" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;"></div>
-					</div>
-				</div>
-				<div class="recomendation">
-					<div class="icon">
-						<img src="img/icons/recomend.svg" alt="">
+
+				<div class="blog">
+					<div class="button">
+						<img src="img/icons/blog.svg">
 						<span>Te puede interesar</span>
 					</div>
-					<div class="cont innovate">
-						<a href="#">
-							<div class="img" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;">
-								<div class="title">
-									<span>Otra oferta de innovación</span>
-								</div>
+					<div id="blog-scroll">
+						<div class="blog-entry">
+							<!-- Título del blog -->
+							<a class="title" href="#">Mi experiencia en Londres, viaje educativo a la ciudad</a>
+							<div class="views">
+								<img src="img/icons/views.svg" alt="">
+								<span>543</span>
 							</div>
-						</a>
-						<div class="info">
-							<div class="post-type"><i>innovatehost</i></div>
-							<img src="img/stars.svg" alt="">
-						</div>
-					</div>
-					<div class="cont innovate">
-						<a href="#">
-							<div class="img" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;">
-								<div class="title">
-									<span>Otra oferta de innovación</span>
-								</div>
+							<div class="rating">
+								<img src="img/stars.svg" alt="">
+								<span>124</span>
 							</div>
-						</a>
-						<div class="info">
-							<div class="post-type"><i>innovatehost</i></div>
-							<img src="img/stars.svg" alt="">
 						</div>
+						<div class="blog-entry">
+							<!-- Título del blog -->
+							<a class="title" href="#">Mi experiencia en Londres, viaje educativo a la ciudad</a>
+							<div class="views">
+								<img src="img/icons/views.svg" alt="">
+								<span>543</span>
+							</div>
+							<div class="rating">
+								<img src="img/stars.svg" alt="">
+								<span>124</span>
+							</div>
+						</div>
+						<div class="blog-entry">
+							<!-- Título del blog -->
+							<a class="title" href="#">Mi experiencia en Londres, viaje educativo a la ciudad</a>
+							<div class="views">
+								<img src="img/icons/views.svg" alt="">
+								<span>543</span>
+							</div>
+							<div class="rating">
+								<img src="img/stars.svg" alt="">
+								<span>124</span>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -137,71 +137,27 @@
 
 		<!-- Contenido principal (ofertas) -->
 		<main>
-			<div class="post-body">
-				<div class="banner" style="background: url(img/canada-toronto.jpg) no-repeat center; background-size:cover;">
+			<div class="blog-body">
+				<div class="banner" style="background: url(img/londres.jpg) no-repeat center; background-size:cover;">
 					<div class="title-cont">
-						<h1>Apartamento piso 10, Poblado</h1>
+						<h1>Cómo sobrevivir a londres, guía práctica</h1>
 					</div>
 				</div>
-				<div class="post-type innovate">
-					<i class="host">hostinghost</i>
-				</div>
-				<div class="main-content hosting">
-					<div class="cont type">
-						<h2>Hotel</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus nisi lorem, eu sodales risus cursus non. Quisque urna nulla, fermentum eget sagittis eu, egestas id eros. Praesent ante justo, ullamcorper vitae nisl blandit, tincidunt rhoncus
-							justo. Vivamus hendrerit semper vestibulum. Maecenas fermentum felis consequat, suscipit magna ac, pulvinar quam. Aliquam vestibulum, nulla sed viverra tempus, ligula tortor auctor felis, sed feugiat nibh ipsum a velit.</p>
+				<div class="text-cont">
+					<!-- icono verde del blog que aparece al lado del texto -->
+					<div class="side-icon">
+						<img src="img/icons/blog-icon.svg" alt="">
 					</div>
-					<div class="cont amenities">
-						<h2>Conveniencias</h2>
-						<div>
-							<img src="img/icons/diary-button.svg" alt="">
-							<span>Parqueadero</span>
+					<div class="main-text">
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus nisi lorem, eu sodales risus cursus non. Quisque urna nulla, fermentum eget sagittis eu, egestas id eros. Praesent ante justo, ullamcorper vitae nisl blandit, tincidunt rhoncus justo. Vivamus hendrerit semper vestibulum.</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus nisi lorem, eu sodales risus cursus non. Quisque urna nulla, fermentum eget sagittis eu, egestas id eros. Praesent ante justo, ullamcorper vitae nisl blandit, tincidunt rhoncus justo. Vivamus <a href="#">hendrerit semper vestibulum</a>. Maecenas fermentum felis consequat, suscipit magna ac, pulvinar quam. Aliquam vestibulum, nulla sed viverra tempus, ligula tortor auctor felis, sed feugiat nibh ipsum a velit. Praesent maximus nisi lorem, eu sodales risus cursus non. Quisque urna nulla, fermentum eget sagittis eu, egestas id eros. Praesent ante justo,</p>
+						<!-- contenedor para imagenes que tiene la imagen y un pie de foto opcional -->
+						<div class="img-cont">
+							<img src="img/medellin.jpg" alt="">
+							<span>Pie de foto</span>
 						</div>
-						<div>
-							<img src="img/icons/diary-button.svg" alt="">
-							<span>Gimnasio</span>
-						</div>
-						<div>
-							<img src="img/icons/diary-button.svg" alt="">
-							<span>Piscina</span>
-						</div>
-						<div>
-							<img src="img/icons/diary-button.svg" alt="">
-							<span>Restaurante</span>
-						</div>
-					</div>
-					<div class="cont location">
-						<h2>Ubicación</h2>
-						<span>Cll 45a #54-31  Medellín, Colombia</span>
-						<div class="map-cont">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1983.0517024099001!2d-75.56337732682343!3d6.25010353077667!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1501007278560" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
-					</div>
-					<div class="cont services">
-						<h2>Servicios</h2>
-						<table>
-							<tbody>
-								<tr>
-									<th>Valor</th>
-									<th>Descripción</th>
-								</tr>
-								<tr>
-									<td>123445</td>
-									<td>dgsdghbstysthsdfghdfgh</td>
-								</tr>
-								<tr>
-									<td>456352</td>
-									<td>fbfsdghadfgar</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="contact">
-						<a class="contact-button" href="#">
-							<img src="img/icons/contact.svg" alt="">
-							<span>Contactar</span>
-						</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus nisi lorem, eu sodales risus cursus non. Quisque urna nulla, fermentum eget sagittis eu, egestas id eros. Praesent ante justo, ullamcorper vitae nisl blandit, tincidunt rhoncus justo. Vivamus <a href="#">hendrerit semper vestibulum</a>. Maecenas fermentum felis consequat, suscipit magna ac, pulvinar quam. Aliquam vestibulum, nulla sed viverra tempus, ligula tortor auctor felis, sed feugiat nibh ipsum a velit.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus nisi lorem, eu sodales risus cursus non. Quisque urna nulla, fermentum eget sagittis eu, egestas id eros. Praesent ante justo, ullamcorper vitae nisl blandit, tincidunt rhoncus justo. Vivamus <a href="#">hendrerit semper vestibulum</a>. Maecenas fermentum felis consequat, suscipit magna ac, pulvinar quam. Aliquam vestibulum, nulla sed viverra tempus, ligula tortor auctor felis, sed feugiat nibh ipsum a velit.</p>
 					</div>
 				</div>
 			</div>

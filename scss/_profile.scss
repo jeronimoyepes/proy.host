@@ -189,71 +189,7 @@
     }
   }
 
-  .blog {
-    .button {
-      margin-bottom: 10px;
 
-      img {
-        height: 31px;
-        vertical-align: middle;
-        margin-right: 5px;
-      }
-
-      span {
-        vertical-align: middle;
-        color: $grey;
-        font-weight: 600;
-      }
-    }
-
-    #blog-scroll {}
-
-    .blog-entry {
-      padding-right: 15px;
-      margin-bottom: 25px;
-
-      .title {
-        display: block;
-        font-size: 1em;
-        font-weight: 600;
-        color: $grey;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        height: 20px;
-        margin-bottom: 5px;
-      }
-
-      .views {
-        display: inline-block;
-
-        img {
-          width: 15px;
-          height: 9.63px;
-          margin-right: 3px;
-        }
-
-        span {
-          color: $grey;
-        }
-      }
-
-      .rating {
-        display: inline-block;
-        float: right;
-
-        img {
-          width: 100px;
-          height: 15.52px;
-          vertical-align: middle;
-        }
-
-        span {
-          color: $grey;
-          vertical-align: middle;
-        }
-      }
-    }
-  }
 }
 // información de perfil (columna de la izquierda)
 
