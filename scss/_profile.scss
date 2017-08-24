@@ -344,7 +344,8 @@
 
   .post-form {
     @include border-radius();
-    padding: 20px;
+    padding: 20px 20px 9px 20px;
+    margin-bottom: 25px;
 
     form {
       .post-content-cont {
@@ -359,19 +360,11 @@
           max-height: 200px;
           vertical-align: top;
         }
-
-        .pin-location {
-          width: 15px;
-          display: inline-block;
-          margin-top: 5px;
-
-          img {
-            width: 100%;
-          }
-        }
       }
 
       .photos-cont {
+        margin-top: 10px;
+
         .post-photo {
           width: 0.1px;
           height: 0.1px;
@@ -379,6 +372,41 @@
           overflow: hidden;
           position: absolute;
           z-index: -1;
+        }
+
+        .pin-location {
+          width: 15px;
+          display: inline-block;
+          margin-top: 5px;
+          vertical-align: top;
+          float: right;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .post-photo + label {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          background-color: #fff;
+          border: 1px solid $lightGrey;
+          @include border-radius();
+        }
+
+        .post-photo + label img {
+          @include all-transition(100ms);
+          width: 26px;
+          height: 26px;
+          margin: 7px;
+        }
+
+        .post-photo + label:hover img {
+          width: 28px;
+          height: 28px;
+          margin: 6px;
         }
       }
     }
