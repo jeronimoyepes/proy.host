@@ -37,6 +37,46 @@ input[type=radio] {
   background: #fff;
   cursor: pointer; }
 
+input[type="email"],
+input[type="text"],
+textarea,
+input[type="password"] {
+  display: block;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #4c4c4c;
+  border: 1px solid #d6d6d6;
+  width: 93%;
+  max-width: 93%;
+  margin-bottom: 8px; }
+
+input[type="email"],
+input[type="password"]:focus {
+  outline: none; }
+
+.submit-button-cont {
+  margin: 5px 0;
+  height: 31px; }
+  .submit-button-cont div {
+    display: inline-block;
+    float: right; }
+    .submit-button-cont div input[type="image"] {
+      vertical-align: middle;
+      width: 31px;
+      height: 31px; }
+    .submit-button-cont div .submit-button {
+      background-color: transparent;
+      cursor: pointer;
+      margin: 0 0 0 auto;
+      font-weight: 600;
+      font-size: 1.05em;
+      color: #706f6f;
+      vertical-align: middle;
+      padding-left: 5px; }
+
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -1757,3 +1797,14 @@ article {
         font-size: 0.9em;
         float: right;
         margin-bottom: 10px; }
+
+.comment-form-cont {
+  padding: 15px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden; }
+  .comment-form-cont form textarea {
+    max-height: 150px; }
