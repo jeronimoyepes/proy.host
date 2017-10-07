@@ -211,8 +211,12 @@ header {
 			}
 
 			.options {
-				width: 15px;
+				width: 60px;
 				margin: 0 0 0 auto;
+
+				p {
+					font-size: 0.9em;
+				}
 
 				img{
 					width: 15px;
