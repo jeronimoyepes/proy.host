@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es-ES" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Hostayni</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+	</script>
+
+	</script>
+</head>
+
+<body class="grey-background">
+	<div class="wrapper">
+		<!-- Perfil de usuario -->
+		<header>
+			<div class="top-logo">
+				<img src="img/Logo-top.png" alt="">
+			</div>
+			<div class="profile-options">
+				<div class="img">
+					<!-- Imagen de perfil -->
+					<img src="img/profile.png" alt="">
+				</div>
+				<div class="name-options-cont">
+					<div class="name">
+						<p>Nombre del usuario</p>
+					</div>
+					<div class="options">
+						<img src="img/icons/gear.svg" alt="">
+						<div class="drop-down">
+							<ul>
+								<li><a href="#">Configuración</a></li>
+								<li class="line"></li>
+								<li><a href="#">Cerrar sesión</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="configuration">
+		<div class="container">
+			<div class="tabs">
+				<div class="title">
+					<div class="icon">
+						<img src="img/icons/information-color.svg" alt="">
+					</div>
+					<h2 class="name">Información</h2>
+				</div>
+				<a class="tab" tab-active="true" href="#">
+					<div class="icon">
+						<img src="img/icons/basic-lines.svg" alt="">
+					</div>
+					<p>Básica</p>
+				</a>
+			</div>
+			<div class="content">
+				<div class="title">
+					<div class="icon">
+						<img src="img/icons/basic.svg" alt="">
+					</div>
+					<h2>Básica</h2>
+				</div>
+
+				<!-- Insertar el formulario aqui -->
+
+				<form action="post">
+
+					<div class="formgroup">
+						<span>Nombre</span>
+						<input type="text" name="name" placeholder="Nombre del lugar de residencia">
+					</div>
+					<div class="formgroup">
+						<span>Tipo</span>
+						<select name="hostingType">
+									<option value="hotel">Hotel</option>
+									<option value="house">Vivienda</option>
+						</select>
+					</div>
+					<div class="formgroup">
+						<span>Descripción</span>
+						<textarea name="description" placeholder="..."></textarea>
+					</div>
+					<div class="formgroup rad">
+						<span>Conveniencias</span>
+						<div class="rad-cont">
+							<input id="r1" type="checkbox" name="gym" value="gym"><label for="r1">Gimnasio</label>
+						</div>
+						<div class="rad-cont">
+							<input id="r2" type="checkbox" name="pool" value="pool"><label for="r2">Piscina</label>
+						</div>
+						<div class="rad-cont">
+							<input id="r3" type="checkbox" name="parking" value="parking"><label for="r3">Parqueader</label>
+						</div>
+						<div class="rad-cont">
+							<input id="r4" type="checkbox" name="restaurant" value="restaurant"><label for="r4">Restaurante</label>
+						</div>
+						<div class="rad-cont">
+							<input id="r5" type="checkbox" name="gym" value="gym"><label for="r5">Gimnasio</label>
+						</div>
+						<div class="rad-cont">
+							<input id="r6" type="checkbox" name="pool" value="pool"><label for="r6">Piscina</label>
+						</div>
+						<div class="rad-cont">
+							<input id="r7" type="checkbox" name="parking" value="parking"><label for="r7">Parqueader</label>
+						</div>
+						<div class="rad-cont">
+							<input id="r8" type="checkbox" name="restaurant" value="restaurant"><label for="r8">Restaurante</label>
+						</div>
+					</div>
+
+				</form>
+
+				<!-- Finaliza el fomulario -->
+
+			</div>
+		</div>
+	</div>
+	<footer>
+
+	</footer>
+</body>
+
+</html>

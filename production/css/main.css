@@ -1810,3 +1810,105 @@ article {
   overflow: hidden; }
   .comment-form-cont form textarea {
     max-height: 150px; }
+
+.configuration .container {
+  max-width: 1000px;
+  margin: 0 auto; }
+  .configuration .container .tabs {
+    display: inline-block;
+    width: 220px;
+    margin-right: -4px;
+    margin-left: 5px;
+    vertical-align: top; }
+    .configuration .container .tabs .title {
+      margin-bottom: 15px; }
+      .configuration .container .tabs .title .icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px; }
+        .configuration .container .tabs .title .icon img {
+          width: 30px;
+          height: 30px; }
+      .configuration .container .tabs .title h2 {
+        font-size: 1.25em;
+        display: inline-block;
+        vertical-align: middle; }
+    .configuration .container .tabs .tab {
+      display: block;
+      padding: 5px 0 5px 15px; }
+      .configuration .container .tabs .tab .icon {
+        margin-right: 4px;
+        display: inline-block; }
+        .configuration .container .tabs .tab .icon img {
+          width: 25px;
+          height: 25px; }
+      .configuration .container .tabs .tab p {
+        display: inline-block;
+        font-weight: 600;
+        vertical-align: top; }
+    .configuration .container .tabs a[tab-active=true] {
+      border-bottom: 1px solid #706f6f; }
+  .configuration .container .content {
+    display: inline-block;
+    max-width: 480px;
+    margin-right: -4px;
+    border-left: 1px solid #706f6f;
+    padding-left: 30px; }
+    .configuration .container .content .title {
+      margin-bottom: 30px; }
+      .configuration .container .content .title .icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px; }
+        .configuration .container .content .title .icon img {
+          width: 60px;
+          height: 60px; }
+      .configuration .container .content .title h2 {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 2em; }
+    .configuration .container .content form .formgroup {
+      margin-bottom: 15px; }
+      .configuration .container .content form .formgroup span {
+        display: block;
+        color: #706f6f;
+        font-weight: 600;
+        margin-bottom: 10px; }
+      .configuration .container .content form .formgroup input {
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 1px solid #d6d6d6; }
+      .configuration .container .content form .formgroup textarea {
+        width: 100%;
+        max-width: 100%;
+        height: 100px;
+        max-height: 150px;
+        box-sizing: border-box;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 1px solid #d6d6d6;
+        overflow: hidden; }
+      .configuration .container .content form .formgroup select {
+        width: 100%;
+        color: #706f6f;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 1px solid #d6d6d6; }
+      .configuration .container .content form .formgroup .rad-cont {
+        display: inline-block;
+        width: 160px; }
+        .configuration .container .content form .formgroup .rad-cont label {
+          font-weight: 600;
+          color: #706f6f;
+          font-size: 0.95em; }
