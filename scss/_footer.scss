@@ -1,0 +1,45 @@
+footer {
+  .main-cont {
+    background: url("../img/background-text.jpg");
+    background-repeat: repeat;
+    padding: 20px 10px;
+    .content {
+      margin: 0 auto;
+      max-width: 1500px;
+      // background-color: red;
+      .logo {
+        display: inline-block;
+        height: 60px;
+        width: auto;
+        margin-right: 40px;
+        vertical-align: middle;
+        img{
+          height: inherit;
+          width: auto;
+        }
+      }
+      .links {
+        display: inline-block;
+        vertical-align: middle;
+        a{
+          color: $grey;
+          margin-right: 35px;
+          font-size: 0.9em;
+        }
+        a:last-child{
+          margin-right: 0;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+      .legal {
+        margin-top: 20px;
+        p {
+          color: $grey;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
