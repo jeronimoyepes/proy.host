@@ -1941,7 +1941,8 @@ footer .main-cont {
       footer .main-cont .content .links a:hover {
         text-decoration: underline; }
     footer .main-cont .content .legal {
-      margin-top: 20px; }
+      margin-top: 20px;
+      text-align: center; }
       footer .main-cont .content .legal p {
         color: #706f6f;
         font-size: 0.8em; }
