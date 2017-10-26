@@ -1913,36 +1913,38 @@ article {
           color: #706f6f;
           font-size: 0.95em; }
 
-footer .main-cont {
-  background: url("../img/background-text.jpg");
-  background-repeat: repeat;
-  padding: 20px 10px; }
-  footer .main-cont .content {
-    margin: 0 auto;
-    max-width: 1500px; }
-    footer .main-cont .content .logo {
-      display: inline-block;
-      height: 60px;
-      width: auto;
-      margin-right: 40px;
-      vertical-align: middle; }
-      footer .main-cont .content .logo img {
-        height: inherit;
-        width: auto; }
-    footer .main-cont .content .links {
-      display: inline-block;
-      vertical-align: middle; }
-      footer .main-cont .content .links a {
-        color: #706f6f;
-        margin-right: 35px;
-        font-size: 0.9em; }
-      footer .main-cont .content .links a:last-child {
-        margin-right: 0; }
-      footer .main-cont .content .links a:hover {
-        text-decoration: underline; }
-    footer .main-cont .content .legal {
-      margin-top: 20px;
-      text-align: center; }
-      footer .main-cont .content .legal p {
-        color: #706f6f;
-        font-size: 0.8em; }
+footer {
+  margin-top: 50px; }
+  footer .main-cont {
+    background: url("../img/background-text.jpg");
+    background-repeat: repeat;
+    padding: 20px 10px; }
+    footer .main-cont .content {
+      margin: 0 auto;
+      max-width: 1500px; }
+      footer .main-cont .content .logo {
+        display: inline-block;
+        height: 60px;
+        width: auto;
+        margin-right: 40px;
+        vertical-align: middle; }
+        footer .main-cont .content .logo img {
+          height: inherit;
+          width: auto; }
+      footer .main-cont .content .links {
+        display: inline-block;
+        vertical-align: middle; }
+        footer .main-cont .content .links a {
+          color: #706f6f;
+          margin-right: 35px;
+          font-size: 0.9em; }
+        footer .main-cont .content .links a:last-child {
+          margin-right: 0; }
+        footer .main-cont .content .links a:hover {
+          text-decoration: underline; }
+      footer .main-cont .content .legal {
+        margin-top: 20px;
+        text-align: center; }
+        footer .main-cont .content .legal p {
+          color: #706f6f;
+          font-size: 0.8em; }
